@@ -157,6 +157,96 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-解决Ubuntu使用apt安装应用时大量大量出现不兼容情况" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/18/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/">解决Ubuntu使用apt安装应用时大量大量出现不兼容情况</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/18/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/" class="archive-article-date">
+  	<time datetime="2018-03-18T13:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>最近因为买了固态，把笔记本的win10和Ubuntu重装了，Ubuntu安装的官网的16.04.04版本，之前是03,结果在使用apt安装应用是大量出现安装依赖不兼容的情况。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install curl</div><div class="line">正在读取软件包列表... 完成</div><div class="line">正在分析软件包的依赖关系树       </div><div class="line">正在读取状态信息... 完成       </div><div class="line">有一些软件包无法被安装。如果您用的是 unstable 发行版，这也许是</div><div class="line">因为系统无法达到您要求的状态造成的。该版本中可能会有一些您需要的软件</div><div class="line">包尚未被创建或是它们已被从新到(Incoming)目录移出。</div><div class="line">下列信息可能会对解决问题有所帮助：</div><div class="line"></div><div class="line">下列软件包有未满足的依赖关系：</div><div class="line"> curl : 依赖: libcurl3-gnutls (= 7.47.0-1ubuntu2.2) 但是 7.47.0-1ubuntu2.6 正要被安装</div><div class="line">E: 无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系。</div></pre></td></tr></table></figure></p>
+<p>虽然可以通过指定依赖的版本来解决这个问题，但是，大量出现了，特别是安装wine时，相关依赖不兼容能有一个屏幕。。。<br><br><br>后来百度了下，其实通过最简单的更换源服务器就行了，之前使用了我链接最快的yun-idc和中国的服务器，换为官方源服务器后问题解决。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">apt</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/其他//" class="article-tag-list-link color3">其他</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/18/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-解决网易云音乐无法打开" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -544,7 +634,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 Silen
+    		&copy; 2018 Silen
     	</div>
       	<div class="footer-right">
 		<a href="http://www.miibeian.gov.cn" target="_blank">津ICP备17008709</a><br/>
@@ -663,6 +753,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">网易云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">apt</a>
               </li>
             
             <div class="clearfix"></div>
