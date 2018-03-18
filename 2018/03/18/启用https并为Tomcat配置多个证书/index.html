@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://silen-dev.cn">
-  <title>解决Ubuntu使用apt安装应用时大量大量出现不兼容情况 | Silen</title>
+  <title>启用https并为Tomcat配置多个证书 | Silen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="最近因为买了固态，把笔记本的win10和Ubuntu重装了，Ubuntu安装的官网的16.04.04版本，之前是03,结果在使用apt安装应用是大量出现安装依赖不兼容的情况。123456789101112sudo apt-get install curl正在读取软件包列表... 完成正在分析软件包的依赖关系树       正在读取状态信息... 完成       有一些软件包无法被安装。如果您用的">
-<meta name="keywords" content="Ubuntu,apt">
+  <meta name="description" content="HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer），是以安全为目标的HTTP通道，简单讲是HTTP的安全版，目前大多数网站已经启用。到目前，https证书已经相当便宜甚至免费，在腾讯云提供免费的TrustAsia(亚洲诚信)单域名证书的诱惑下，我也为我这没人访问的破网站申请了两张域名，分别是主站https://silen-">
+<meta name="keywords" content="https,Tomcat,ssl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="解决Ubuntu使用apt安装应用时大量大量出现不兼容情况">
-<meta property="og:url" content="http://silen-dev.cn/2018/03/18/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/index.html">
+<meta property="og:title" content="启用https并为Tomcat配置多个证书">
+<meta property="og:url" content="http://silen-dev.cn/2018/03/18/启用https并为Tomcat配置多个证书/index.html">
 <meta property="og:site_name" content="Silen">
-<meta property="og:description" content="最近因为买了固态，把笔记本的win10和Ubuntu重装了，Ubuntu安装的官网的16.04.04版本，之前是03,结果在使用apt安装应用是大量出现安装依赖不兼容的情况。123456789101112sudo apt-get install curl正在读取软件包列表... 完成正在分析软件包的依赖关系树       正在读取状态信息... 完成       有一些软件包无法被安装。如果您用的">
-<meta property="og:updated_time" content="2018-03-18T04:20:47.714Z">
+<meta property="og:description" content="HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer），是以安全为目标的HTTP通道，简单讲是HTTP的安全版，目前大多数网站已经启用。到目前，https证书已经相当便宜甚至免费，在腾讯云提供免费的TrustAsia(亚洲诚信)单域名证书的诱惑下，我也为我这没人访问的破网站申请了两张域名，分别是主站https://silen-">
+<meta property="og:updated_time" content="2018-03-18T09:55:30.487Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="解决Ubuntu使用apt安装应用时大量大量出现不兼容情况">
-<meta name="twitter:description" content="最近因为买了固态，把笔记本的win10和Ubuntu重装了，Ubuntu安装的官网的16.04.04版本，之前是03,结果在使用apt安装应用是大量出现安装依赖不兼容的情况。123456789101112sudo apt-get install curl正在读取软件包列表... 完成正在分析软件包的依赖关系树       正在读取状态信息... 完成       有一些软件包无法被安装。如果您用的">
+<meta name="twitter:title" content="启用https并为Tomcat配置多个证书">
+<meta name="twitter:description" content="HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer），是以安全为目标的HTTP通道，简单讲是HTTP的安全版，目前大多数网站已经启用。到目前，https证书已经相当便宜甚至免费，在腾讯云提供免费的TrustAsia(亚洲诚信)单域名证书的诱惑下，我也为我这没人访问的破网站申请了两张域名，分别是主站https://silen-">
   
     <link rel="alternative" href="/atom.xml" title="Silen" type="application/atom+xml">
   
@@ -160,29 +160,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-解决Ubuntu使用apt安装应用时大量大量出现不兼容情况" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-启用https并为Tomcat配置多个证书" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      解决Ubuntu使用apt安装应用时大量大量出现不兼容情况
+      启用https并为Tomcat配置多个证书
     </h1>
   
 
         
-        <a href="/2018/03/18/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/" class="archive-article-date">
-  	<time datetime="2018-03-18T13:32:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
+        <a href="/2018/03/18/启用https并为Tomcat配置多个证书/" class="archive-article-date">
+  	<time datetime="2018-03-18T08:49:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>最近因为买了固态，把笔记本的win10和Ubuntu重装了，Ubuntu安装的官网的16.04.04版本，之前是03,结果在使用apt安装应用是大量出现安装依赖不兼容的情况。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install curl</div><div class="line">正在读取软件包列表... 完成</div><div class="line">正在分析软件包的依赖关系树       </div><div class="line">正在读取状态信息... 完成       </div><div class="line">有一些软件包无法被安装。如果您用的是 unstable 发行版，这也许是</div><div class="line">因为系统无法达到您要求的状态造成的。该版本中可能会有一些您需要的软件</div><div class="line">包尚未被创建或是它们已被从新到(Incoming)目录移出。</div><div class="line">下列信息可能会对解决问题有所帮助：</div><div class="line"></div><div class="line">下列软件包有未满足的依赖关系：</div><div class="line"> curl : 依赖: libcurl3-gnutls (= 7.47.0-1ubuntu2.2) 但是 7.47.0-1ubuntu2.6 正要被安装</div><div class="line">E: 无法修正错误，因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系。</div></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<p>虽然可以通过指定依赖的版本来解决这个问题，但是，大量出现了，特别是安装wine时，相关依赖不兼容能有一个屏幕。。。<br><br><br>后来百度了下，其实通过最简单的更换源服务器就行了，之前使用了我链接最快的yun-idc和中国的服务器，换为官方源服务器后问题解决。</p>
+        <p>HTTPS（全称：Hyper Text Transfer Protocol over Secure Socket Layer），是以安全为目标的HTTP通道，简单讲是HTTP的安全版，目前大多数网站已经启用。<br><br>到目前，https证书已经相当便宜甚至免费，在腾讯云提供免费的TrustAsia(亚洲诚信)单域名证书的诱惑下，我也为我这没人访问的破网站申请了两张域名，分别是主站<a href="https://silen-dev.cn">https://silen-dev.cn</a>和Sherlock官网<a href="https://sherlock.silen-dev.cn" target="_blank" rel="external">https://sherlock.silen-dev.cn</a>。<br><br><a id="more"></a><br>在腾讯云申请了之后，几分钟证书就签发了，给的压缩包内包括Apache、Tomcat、Nginx等服务器使用的证书，小破站使用Tomcat的jks后缀证书。<br></p>
+<ol>
+<li>将两张jks证书上传到Tomcat的conf目录下</li>
+<li>编辑server.xml文件，启用https并导入证书<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"443"</span> <span class="attr">protocol</span>=<span class="string">"org.apache.coyote.http11.Http11NioProtocol"</span></span></div><div class="line"><span class="tag">           <span class="attr">maxThreads</span>=<span class="string">"150"</span> <span class="attr">SSLEnabled</span>=<span class="string">"true"</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">SSLHostConfig</span> <span class="attr">hostName</span>=<span class="string">"sherlock.silen-dev.cn"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">Certificate</span> <span class="attr">certificateKeystoreFile</span>=<span class="string">"conf/sherlock.silen-dev.cn.jks"</span></span></div><div class="line"><span class="tag">                     <span class="attr">certificateKeyAlias</span>=<span class="string">"sherlock.silen-dev.cn"</span></span></div><div class="line"><span class="tag">                     <span class="attr">certificateKeystorePassword</span>=<span class="string">"xxxxxxx"</span></span></div><div class="line"><span class="tag">                     <span class="attr">type</span>=<span class="string">"RSA"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">SSLHostConfig</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">SSLHostConfig</span> <span class="attr">hostName</span>=<span class="string">"silen-dev.cn"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">Certificate</span> <span class="attr">certificateKeystoreFile</span>=<span class="string">"conf/silen-dev.cn.jks"</span></span></div><div class="line"><span class="tag">                     <span class="attr">certificateKeyAlias</span>=<span class="string">"silen-dev.cn"</span></span></div><div class="line"><span class="tag">                     <span class="attr">certificateKeystorePassword</span>=<span class="string">"xxxxxxx"</span></span></div><div class="line"><span class="tag">                     <span class="attr">type</span>=<span class="string">"RSA"</span> /&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">SSLHostConfig</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">Connector</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>其中：<br><br>&nbsp;&nbsp;<strong>hostName</strong> : 应用该https证书的站点,如果只设置一个证书，本项可以删除。<br><br>&nbsp;&nbsp;<strong>certificateKeystoreFile</strong> :证书存放的路径。<br><br>&nbsp;&nbsp;<strong>certificateKeyAlias</strong> :应用证书的网站别名。<br><br>&nbsp;&nbsp;<strong>certificateKeystorePassword</strong> :证书的私钥，申请证书时填写的。<br><br>另外，Tomcat是默认将Https端口设置在8443的，至于8443和443端口的区别，网上说8443会在浏览时加上端口号，所以，小破站还是使用443端口，<strong>注意iptables，将443端口开放</strong>。<br><br>重启Tomcat，到此，就能通过https访问到小破站了。</p>
+<ol>
+<li>将http强制跳转到https上<br><br>到conf目录下的web.xml，在<code>&lt;/welcome-file-list&gt;</code>后面，<code>&lt;/web-app&gt;</code>前面，也就是倒数第二段里，加上这样一段<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">login-config</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- Authorization setting for SSL --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">auth-method</span>&gt;</span>CLIENT-CERT<span class="tag">&lt;/<span class="name">auth-method</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">realm-name</span>&gt;</span>Client Cert Users-only Area<span class="tag">&lt;/<span class="name">realm-name</span>&gt;</span></div><div class="line"> <span class="tag">&lt;/<span class="name">login-config</span>&gt;</span></div><div class="line"> <span class="tag">&lt;<span class="name">security-constraint</span>&gt;</span></div><div class="line">    <span class="comment">&lt;!-- Authorization setting for SSL --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">web-resource-collection</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="name">web-resource-name</span>&gt;</span>SSL<span class="tag">&lt;/<span class="name">web-resource-name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">web-resource-collection</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">user-data-constraint</span>&gt;</span></div><div class="line">    	<span class="tag">&lt;<span class="name">transport-guarantee</span>&gt;</span>CONFIDENTIAL<span class="tag">&lt;/<span class="name">transport-guarantee</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">user-data-constraint</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">security-constraint</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这步目的是让非ssl的connector跳转到ssl的connector去。所以还需要前往server.xml进行配置：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Connector</span> <span class="attr">port</span>=<span class="string">"80"</span> <span class="attr">protocol</span>=<span class="string">"HTTP/1.1"</span></span></div><div class="line"><span class="tag">    <span class="attr">connectionTimeout</span>=<span class="string">"20000"</span></span></div><div class="line"><span class="tag">    <span class="attr">redirectPort</span>=<span class="string">"443"</span> /&gt;</span></div></pre></td></tr></table></figure></p>
+<p>redirectPort改成ssl的connector的端口443，重启后便会生效。<br></p>
+<p>然后小破站的http顺利跳转到了https。</p>
+<p><br><br><strong><a href="https://cloud.tencent.com/document/product/400/4143" target="_blank" rel="external">证书安装指引</a></strong></p>
 
       
 
@@ -196,11 +208,15 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Ubuntu</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">https</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">apt</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Tomcat</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ssl</a>
         		</li>
       		
 		</ul>
@@ -267,7 +283,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://silen-dev.cn/2018/03/18/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://silen-dev.cn/2018/03/18/启用https并为Tomcat配置多个证书/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -282,8 +298,8 @@
 <nav id="article-nav">
   
   
-    <a href="/2017/12/07/解决网易云音乐无法打开/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">解决网易云音乐无法打开</div>
+    <a href="/2018/03/17/解决Ubuntu使用apt安装应用时大量大量出现不兼容情况/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">解决Ubuntu使用apt安装应用时大量大量出现不兼容情况</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -408,6 +424,34 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">博客</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">https</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Tomcat</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ssl</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">apt</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">网易云</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">DHT</a>
               </li>
              
@@ -433,22 +477,6 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Android</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">博客</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Ubuntu</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">apt</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">网易云</a>
               </li>
             
             <div class="clearfix"></div>
